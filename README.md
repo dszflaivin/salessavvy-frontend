@@ -28,7 +28,7 @@ Sales Savvy is a customizable sales management application. This is the **fronte
 ### Steps to Install
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/sales-savvy-frontend.git
+   git clone https://github.com/your-username/salessavvy-frontend.git
 
 2. Navigate to the project directory:
 ```bash
