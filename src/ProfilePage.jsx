@@ -13,7 +13,7 @@ export default function ProfilePage() {
 
   useEffect(() => {
     // Fetch user details
-    fetch('http://localhost:9090/api/users/profile', {
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/api/users/profile`, {
       method: 'GET',
       credentials: 'include',
     })
@@ -22,7 +22,7 @@ export default function ProfilePage() {
       .catch((error) => console.error('Error fetching user:', error));
 
     // Fetch order history
-    fetch('http://localhost:9090/api/orders', {
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/api/orders`, {
       method: 'GET',
       credentials: 'include',
     })

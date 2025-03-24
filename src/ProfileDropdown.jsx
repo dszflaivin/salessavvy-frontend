@@ -13,7 +13,7 @@ export function ProfileDropdown({ username }) {
   };
   const handleLogout = async () => {
     try {
-      const response = await fetch('http://localhost:9090/api/auth/logout', {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/auth/logout`, {
         method: 'POST', // Use POST as logout often involves session clearing
         credentials: 'include', // Include credentials like cookies for authentication
       });

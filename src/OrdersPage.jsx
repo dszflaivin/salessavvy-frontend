@@ -23,7 +23,7 @@ export default function OrdersPage() {
 
   const fetchOrders = async () => {
     try {
-      const response = await fetch('http://localhost:9090/api/orders', {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/orders`, {
         credentials: 'include',
       });
       if (!response.ok) throw new Error('Failed to fetch orders');
@@ -40,7 +40,7 @@ export default function OrdersPage() {
   const fetchCartCount = async () => {
     setIsCartLoading(true); // Set loading state
     try {
-      const response = await fetch(`http://localhost:9090/api/cart/items/count?username=${username}`, {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/cart/items/count?username=${username}`, {
         credentials: 'include',
       });
       const count = await response.json();

@@ -117,7 +117,7 @@ export default function RegistrationPage() {
     setError(null);
 
     try {
-      const response = await fetch("http://localhost:9090/api/users/register", {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/users/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

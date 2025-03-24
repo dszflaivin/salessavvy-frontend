@@ -515,7 +515,7 @@ const ModifyUserFormComponent = ({ onClose }) => {
 
       if (!userid) return;
 
-      const response = await fetch(`http://localhost:9090/admin/user/getbyid/${userid}`, {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/admin/user/getbyid/${userid}`, {
         method: "GET",
         credentials: "include",
       });
@@ -544,7 +544,7 @@ const ModifyUserFormComponent = ({ onClose }) => {
     const email = formData.get("email");
     const role = formData.get("role");
 
-    const response = await fetch("http://localhost:9090/admin/user/modify", {
+    const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/admin/user/modify`, {
       method: "PUT",
       credentials: "include",
       headers: {
