@@ -197,7 +197,7 @@ export default function RegistrationPage() {
             >
               <option value="" disabled>Select your role</option>
               <option value="CUSTOMER">Customer</option>
-              <option value="ADMIN">Admin</option>
+              
             </select>
           </div>
           <button type="submit" className="form-button">Sign Up</button>
