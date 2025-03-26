@@ -320,7 +320,7 @@ const CustomModal = ({ modalType, onClose, onSubmit, response }) => {
                       onChange={handleInputChange}
                     />
                   </div>
-                  <button onClick={handleSubmit}>Sumbit</button>
+                  <button onClick={handleSubmit}>Submit</button>
                 </>
               )}
               {response && (
@@ -328,7 +328,7 @@ const CustomModal = ({ modalType, onClose, onSubmit, response }) => {
                   <div className="business-response-item">
                     <div>Total Business: ₹ </div>
                     <div>
-                      {response?.dailyBusiness?.totalBusiness?.toFixed(2)}
+                      {response?.monthlyBusiness?.totalBusiness?.toFixed(2)}
                     </div>
                   </div>
                   <div className="business-response-item">
@@ -369,7 +369,7 @@ const CustomModal = ({ modalType, onClose, onSubmit, response }) => {
                       onChange={handleInputChange}
                     />
                   </div>
-                  <button onClick={handleSubmit}>Sumbit</button>
+                  <button onClick={handleSubmit}>Submit</button>
                 </>
               )}
               {response && (
@@ -418,7 +418,7 @@ const CustomModal = ({ modalType, onClose, onSubmit, response }) => {
                       onChange={handleInputChange}
                     />
                   </div>
-                  <button onClick={handleSubmit}>Sumbit</button>
+                  <button onClick={handleSubmit}>Submit</button>
                 </>
               )}
               {response && (
